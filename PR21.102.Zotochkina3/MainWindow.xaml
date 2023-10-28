@@ -1,0 +1,30 @@
+﻿<Window x:Class="PR21._102.Zotochkina3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR21._102.Zotochkina3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text=" Зоточкина Ангелина ПР-21.102 Номер варианта: 3 " FontSize="24"/>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <TextBlock Text="Введите размер массива (N):"/>
+            <TextBox x:Name="txtSize" Width="100"/>
+
+            <TextBlock Text="Введите минимальное значение диапазона:"/>
+            <TextBox x:Name="txtMinRange" Width="100"/>
+
+            <TextBlock Text="Введите максимальное значение диапазона:"/>
+            <TextBox x:Name="txtMaxRange" Width="100"/>
+            <TextBlock x:Name="txtResult"/>
+            <Button Content="Выполнить расчет" Click="CalculateButton_Click" Height="42" Width="263"/>
+        </StackPanel>
+    </Grid>
+</Window>
