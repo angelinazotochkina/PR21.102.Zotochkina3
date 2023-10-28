@@ -23,8 +23,8 @@
 
             <TextBlock Text="Введите максимальное значение диапазона:"/>
             <TextBox x:Name="txtMaxRange" Width="100"/>
-            <TextBlock x:Name="txtResult"/>
-            <Button Content="Выполнить расчет" Click="CalculateButton_Click" Height="42" Width="263"/>
+            <Button Content="Выполнить расчет" Click="CalculateButton_Click" Height="28" Width="206"/>
+            <TextBlock x:Name="txtResult" Height="82"/>
         </StackPanel>
     </Grid>
 </Window>
